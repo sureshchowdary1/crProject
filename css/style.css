@@ -1,0 +1,294 @@
+
+.firstSection{
+    width: 100%;
+    height: 400px;
+    background: url(../img/buildBg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: relative;
+}
+
+.text-cr{
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.fiBox{
+    width: 50px;
+    height: 75px;
+    background: rgba(49, 48, 48, 0.425);
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px white;
+    position: absolute;
+    left: 150px;
+    top: 60px;
+    transform: rotateY(26px);
+}
+
+.secondSection{
+    background: whitesmoke;
+    position: relative;
+
+}
+
+.imgDiv .img{
+    max-width: 400px;
+    float: right;
+    margin: 10px 20px 20px 20px;
+}
+
+.imgDiv p{
+    text-align: justify;
+}
+
+.gallerySection{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.galleryDiv{
+    overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto; 
+        grid-gap: 10px; 
+        width: 90%;
+        margin: 0 auto;
+        
+        grid-template-areas: 
+        "img1 img2 img3 img4"
+        "img5 img6 img3 img7"
+        "img8 img8 img9 img10";
+    
+}
+
+.galleryDiv .img{
+    width: 100%;
+    height: 250px;
+}
+
+.galleryDiv .img1{
+    grid-area: img1;
+    background-image: url(../images/coach_1_sm.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.galleryDiv .img2{
+    grid-area: img2;
+    background: url(../images/person_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.galleryDiv .img3{
+    grid-area: img3;
+    background: url(../images/person_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+.galleryDiv .img4{
+    grid-area: img4;
+    background: url(../images/person_3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.galleryDiv .img5{
+    grid-area: img5;
+    background: url(../images/person_4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.galleryDiv .img6{
+    grid-area: img6;
+    background: url(../images/person_5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.galleryDiv .img7{
+    grid-area: img7;
+    background: url(../images/person_6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.galleryDiv .img8{
+    grid-area: img8;
+    background: url(../images/person_7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.galleryDiv .img9{
+    grid-area: img9;
+    background: url(../images/person_8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.galleryDiv .img10{
+    grid-area: img10;
+    background: url(../images/coach_hero_3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.AdDiv{
+    background-color: lightblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.AdDiv .firstAd,
+.AdDiv .secondAd,
+.AdDiv .thirdAd
+{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.AdDiv .imgDiv img{
+    width: 90%;
+    margin: auto;
+}
+
+.title-Ad {
+    background-color: lightseagreen;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top:-20px;
+    transform: translate(-50%);
+    height: 30px;
+    overflow: hidden;
+    
+}
+
+.title-Ad h5{
+    position: absolute;
+    top: -16px;
+    left: 5px;
+}
+
+.title-Ad .h5right{
+    left: 24px;
+}
+
+form{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 30px;
+    /* background: ; */
+}
+
+form label{
+    font-size: 24px;
+}
+
+
+form .name{
+    display: flex;
+    margin: 20px 0;
+}
+
+form .name div{
+    margin-left: 150px;
+}
+
+form .name input , form input{
+    padding: 2px;
+    font-size: 20px;
+}
+
+form .mail{
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form .mail input{
+    width: 40%;
+    margin-left: 50px;
+}
+
+form .phone{
+    display: flex;
+    margin-left: 150px;
+}
+
+form .phone input{
+    font-size: 16px;
+}
+form .gender{
+    margin-left: 150px;
+}
+
+form .gender input{
+    margin: 30px;
+}
+
+form .submit{
+    width: 0%;
+    margin: auto;
+}
+
+form button{
+    background: linear-gradient(to left, rgba(11, 39, 196, 0.411) , blue);
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+}
+
+footer{
+    height: 200px;
+    width: 100%;
+    background: black;
+    color: #fff;
+    position: relative;
+}
+
+footer a{
+    text-decoration: none;
+    color: #000;
+    font-size: 32px;
+}
+
+footer div{
+    position: absolute;
+    text-align: center;
+    right: 30px;
+    top: 30px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+}
+
+footer h5{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    font-size: 20px;
+    bottom: 0;
+}
